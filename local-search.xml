@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>熟悉Markdown语法</title>
+    <link href="/2020/07/18/%E7%86%9F%E6%82%89Markdown%E8%AF%AD%E6%B3%95/"/>
+    <url>/2020/07/18/%E7%86%9F%E6%82%89Markdown%E8%AF%AD%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<h1 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h1><pre><code class="hljs clean"># 这是一级标题## 这是二级标题### 这是三级标题#### 这是四级标题##### 这是五级标题###### 这是六级标题</code></pre><p>效果如下:</p><h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><h4 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="这是四级标题"></a>这是四级标题</h4><h5 id="这是五级标题"><a href="#这是五级标题" class="headerlink" title="这是五级标题"></a>这是五级标题</h5><h6 id="这是六级标题"><a href="#这是六级标题" class="headerlink" title="这是六级标题"></a>这是六级标题</h6><hr><h1 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h1><pre><code class="hljs asciidoc">*<span class="hljs-strong">*这是加粗的文字*</span><span class="hljs-strong">*</span><span class="hljs-strong">*</span>这是倾斜的文字<span class="hljs-strong">*`</span><span class="hljs-strong">*</span>*<span class="hljs-strong">*这是斜体加粗的文字*</span>*<span class="hljs-strong">*</span><span class="hljs-strong">~~这是加删除线的文字~~</span></code></pre><p>效果如下:<br><strong>我加粗了</strong><br><em>我倾斜了</em><br><strong><em>我加粗并且倾斜了</em></strong><br><del>我被删除了</del></p><h1 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h1><pre><code class="hljs shell"><span class="hljs-meta">&gt;</span><span class="bash">这是引用的内容</span></code></pre><p>效果如下:</p><blockquote><p>这是引用的类型</p></blockquote><h1 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h1><pre><code class="hljs asciidoc">-------**<span class="hljs-strong">*</span><span class="hljs-strong">*</span>**<span class="hljs-strong">*</span></code></pre><h2 id="效果如下"><a href="#效果如下" class="headerlink" title="效果如下:"></a>效果如下:</h2><hr><hr><hr><h1 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h1><pre><code class="hljs markdown">示例:![<span class="hljs-string">something</span>](<span class="hljs-link">https://cdn4.buysellads.net/uu/1/41334/1550855391-cc_dark.png "图片"</span>)</code></pre><p><img src="https://cdn4.buysellads.net/uu/1/41334/1550855391-cc_dark.png" srcset="/img/loading.gif" alt="something" title="图片"></p><h1 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h1><pre><code class="hljs markdown">[<span class="hljs-string">超链接名</span>](<span class="hljs-link">超链接地址 "超链接title"</span>)title可加可不加</code></pre><p>效果如下:<br><a href="https://lustime.github.io" target="_blank" rel="noopener">lustime</a></p><h1 id="七、列表"><a href="#七、列表" class="headerlink" title="七、列表"></a>七、列表</h1><p><strong>无序列表</strong></p><pre><code class="hljs markdown"><span class="hljs-bullet">- </span>列表内容<span class="hljs-bullet">+ </span>列表内容<span class="hljs-bullet">* </span>列表内容</code></pre><p>效果如下:</p><ul><li>列表1</li></ul><ul><li>列表2</li></ul><ul><li>列表3</li></ul><p><strong>有序列表</strong></p><pre><code class="hljs angelscript"><span class="hljs-number">1.</span> 列表<span class="hljs-number">1</span><span class="hljs-number">2.</span> 列表<span class="hljs-number">2</span><span class="hljs-number">3.</span> 列表<span class="hljs-number">3</span></code></pre><p>效果如下:</p><ol><li>列表1</li><li>列表2</li><li>列表3</li></ol><p><strong>列表嵌套</strong></p><ul><li>一级无须<ul><li>二级无须</li><li>二级无须</li></ul></li><li>一级无须<ol><li>二级有序</li><li>二级有序</li></ol></li></ul><ol><li>一级有序<ul><li>二级无须</li><li>二级无须</li></ul></li><li>一级有序<ol><li>二级有序</li><li>二级有序</li></ol></li></ol><h1 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h1><pre><code class="hljs gherkin">站点|<span class="hljs-string">地址</span>|<span class="hljs-string">介绍</span><span class="hljs-string">--</span>|<span class="hljs-string">:--:</span>|<span class="hljs-string">--:</span><span class="hljs-string">Fluid Docs</span>|<span class="hljs-string">https://hexo.fluid-dev.com/docs/</span>|<span class="hljs-string">Fluid 官方文档</span><span class="hljs-string">Hexo-theme-fluid</span>|<span class="hljs-string">https://github.com/fluid-dev/hexo-theme-fluid</span>|<span class="hljs-string">Fluid Github Repo</span><span class="hljs-string">Fluid Blog</span>|<span class="hljs-string">https://hexo.fluid-dev.com/</span>|<span class="hljs-string">Fluid 官方博客</span><span class="hljs-string">第二行分割表头和内容。</span><span class="hljs-string">- 有一个就行，为了对齐，多加了几个</span><span class="hljs-string">文字默认居左</span><span class="hljs-string">-两边加：表示文字居中</span><span class="hljs-string">-右边加：表示文字居右</span><span class="hljs-string">注：原生的语法两边都要用 </span>|<span class="hljs-string"> 包起来。此处省略</span></code></pre><p>效果如下:<br>站点|地址|介绍<br>–|:–:|–:<br>Fluid Docs|<a href="https://hexo.fluid-dev.com/docs/|Fluid" target="_blank" rel="noopener">https://hexo.fluid-dev.com/docs/|Fluid</a> 官方文档<br>Hexo-theme-fluid|<a href="https://github.com/fluid-dev/hexo-theme-fluid|Fluid" target="_blank" rel="noopener">https://github.com/fluid-dev/hexo-theme-fluid|Fluid</a> Github Repo<br>Fluid Blog|<a href="https://hexo.fluid-dev.com/|Fluid" target="_blank" rel="noopener">https://hexo.fluid-dev.com/|Fluid</a> 官方博客</p><h1 id="九、代码"><a href="#九、代码" class="headerlink" title="九、代码"></a>九、代码</h1><pre><code class="hljs arcade"><span class="hljs-string">`代码`</span></code></pre><p>效果如下:<br><code>单行代码</code></p><h1 id="十、iframe页面嵌套"><a href="#十、iframe页面嵌套" class="headerlink" title="十、iframe页面嵌套"></a>十、iframe页面嵌套</h1><iframe src="https://hexo.fluid-dev.com/" width="100%" height="500" name="topFrame" scrolling="yes"  noresize="noresize" frameborder="0" id="topFrame"></iframe>]]></content>
+    
+    
+    <categories>
+      
+      <category>其他</category>
+      
+      <category>Markdown</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2020/07/17/hello-world/"/>
     <url>/2020/07/17/hello-world/</url>
@@ -11,6 +32,22 @@
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="hljs bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="hljs bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="hljs bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
     
+    <categories>
+      
+      <category>其他</category>
+      
+      <category>hexo</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Markdown</tag>
+      
+      <tag>hexo</tag>
+      
+    </tags>
     
   </entry>
   
