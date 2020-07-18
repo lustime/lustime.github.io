@@ -218,7 +218,17 @@
   </div>
 </div>
 <div class="mt-5 markdown-body">
-  
+  <p><a id="rainbow" href=''>🌈 获取中...</a></p>
+<script>
+fetch('https://api.eatrice.top')
+  .then(response => response.json())
+  .then(data => {
+    var rainbow = document.getElementById('rainbow');
+    rainbow.innerHTML = data.Content;
+    rainbow.href = "https://rainbow.eatrice.top/?ID=" + data.ID;
+  })
+  .catch(console.error)
+</script>
 </div>
 
               </div>
