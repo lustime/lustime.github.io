@@ -184,7 +184,7 @@
     <div class="category row">
       <a
         class="category-item  list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckcrrtgx80004ekukdk7l8vej" role="tab" data-toggle="collapse" href="#collapse-ckcrrtgx80004ekukdk7l8vej"
+        id="heading-ckcrrx1qk0004rguk7us3ep8i" role="tab" data-toggle="collapse" href="#collapse-ckcrrx1qk0004rguk7us3ep8i"
         aria-expanded="true"
       >
         其他
@@ -197,8 +197,8 @@
       <div class="category-collapse">
         
           
-  <div id="collapse-ckcrrtgx80004ekukdk7l8vej" class="collapse in show" role="tabpanel"
-       aria-labelledby="heading-ckcrrtgx80004ekukdk7l8vej">
+  <div id="collapse-ckcrrx1qk0004rguk7us3ep8i" class="collapse in show" role="tabpanel"
+       aria-labelledby="heading-ckcrrx1qk0004rguk7us3ep8i">
     
   
   
@@ -207,7 +207,7 @@
     <div class="category-sub row">
       <a
         class="category-subitem collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckcrrtgxc0008ekuke6hd9xhu" role="tab" data-toggle="collapse" href="#collapse-ckcrrtgxc0008ekuke6hd9xhu"
+        id="heading-ckcrrx1qn0008rgukb5fue6jb" role="tab" data-toggle="collapse" href="#collapse-ckcrrx1qn0008rgukb5fue6jb"
         aria-expanded="false"
       >
         hexo
@@ -220,8 +220,8 @@
       <div class="category-collapse">
         
           
-  <div id="collapse-ckcrrtgxc0008ekuke6hd9xhu" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-ckcrrtgxc0008ekuke6hd9xhu">
+  <div id="collapse-ckcrrx1qn0008rgukb5fue6jb" class="collapse in" role="tabpanel"
+       aria-labelledby="heading-ckcrrx1qn0008rgukb5fue6jb">
     
     
     
@@ -243,7 +243,7 @@
     <div class="category-sub row">
       <a
         class="category-subitem collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckcrrtgxd000bekukceex7afo" role="tab" data-toggle="collapse" href="#collapse-ckcrrtgxd000bekukceex7afo"
+        id="heading-ckcrrx1qo000brgukfaji4upt" role="tab" data-toggle="collapse" href="#collapse-ckcrrx1qo000brgukfaji4upt"
         aria-expanded="false"
       >
         Markdown
@@ -256,8 +256,8 @@
       <div class="category-collapse">
         
           
-  <div id="collapse-ckcrrtgxd000bekukceex7afo" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-ckcrrtgxd000bekukceex7afo">
+  <div id="collapse-ckcrrx1qo000brgukfaji4upt" class="collapse in" role="tabpanel"
+       aria-labelledby="heading-ckcrrx1qo000brgukfaji4upt">
     
     
     
@@ -319,6 +319,29 @@
   </div>
 </div>
   
+
+  
+  <!-- APlayer 音乐播放器 -->
+  <div id="aplayer"></div>
+  <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'false' === 'true',
+      loop: 'all',
+      order: 'random',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"name","artist":"artist","url":"/songs/test.mp3","cover":"/img/cover.jpg"},{"name":"name","artist":"artist","url":"https://...url.mp3","cover":"https://...cover.jpg"}]
+    });
+  }
+</script>
 
   
 
