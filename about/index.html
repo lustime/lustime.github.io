@@ -45,6 +45,10 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
   <script  src="/js/utils.js" ></script>
 <meta name="generator" content="Hexo 4.2.1"></head>
@@ -138,8 +142,7 @@
   </div>
 </nav>
 
-    <div class="view intro-2" id="background" parallax=true
-         style="background: url('/img/about_image.jpg') no-repeat center center;
+    <div class="view intro-2" id="background" parallax=true style="background: url('/img/about_image.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -147,6 +150,13 @@
             <span class="h2" id="subtitle">
               
             </span>
+
+            
+            <br>
+            <span class="h2" id="hitokoto">
+              
+            </span>
+            
 
             
           </div>
@@ -159,19 +169,17 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5" id="board"
-          >
-          
-            <div class="about-avatar">
-              <img src="/img/me.jpg" srcset="/img/loading.gif"
-                   class="img-fluid" alt="avatar">
-            </div>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+    <div class="container nopadding-md">
+      <div class="py-5" id="board" >
+        
+        <div class="about-avatar">
+          <img src="/img/me.jpg" srcset="/img/loading.gif" class="img-fluid" alt="avatar">
+        </div>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-10 m-auto">
+              
 
 <div class="text-center">
   <div class="about-info">
@@ -218,35 +226,44 @@
   </div>
 </div>
 <div class="mt-5 markdown-body">
-  <div style="text-align:center"><p><a id="rainbow" href=''>🌈 获取中...</a></p></div>
+  <div style="text-align:center">
+  <p>
+    <a id="rainbow" href=''>🌈 获取中...</a>
+  </p>
+  <p>
+    <h5 id ="author"></h5>
+  </p>
+</div>
 <script>
 fetch('https://api.eatrice.top')
   .then(response => response.json())
   .then(data => {
     var rainbow = document.getElementById('rainbow');
+    var author = document.getElementById('author');
     rainbow.innerHTML = data.Content;
+    author.innerHTML = '——' + '「' + data.Author + '」';
     rainbow.href = "https://rainbow.eatrice.top/?ID=" + data.ID;
   })
   .catch(console.error)
 </script>
 </div>
 
-              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
     
   </main>
 
   
-    <a id="scroll-top-button" href="#" role="button">
-      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-    </a>
+  <a id="scroll-top-button" href="#" role="button">
+    <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+  </a>
   
 
   
-    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+  <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
      aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
@@ -343,22 +360,26 @@ fetch('https://api.eatrice.top')
 
   <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
   <script>
-    var typed = new Typed('#subtitle', {
-      strings: [
-        '  ',
-        "关于&nbsp;",
-      ],
-      cursorChar: "_",
-      typeSpeed: 70,
-      loop: false,
-    });
-    typed.stop();
-    $(document).ready(function () {
-      $(".typed-cursor").addClass("h2");
-      typed.start();
-    });
+    function typing(id, title){
+        var typed = new Typed('#' + id, {
+            strings: [
+              '  ',
+              title + "&nbsp;",
+            ],
+            cursorChar: "<span id='xing'>♥</span>",
+            typeSpeed: 70,
+            loop: false,
+        });
+        typed.stop();
+        $(document).ready(function () {
+            $(".typed-cursor").addClass("h2");
+            typed.start();
+        });
+    }
+    
+        typing("subtitle", "关于")
+    
   </script>
-
 
 
   <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
@@ -460,4 +481,5 @@ fetch('https://api.eatrice.top')
 
 
 </body>
+
 </html>

@@ -36,6 +36,10 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
   <script  src="/js/utils.js" ></script>
 <meta name="generator" content="Hexo 4.2.1"></head>
@@ -129,8 +133,7 @@
   </div>
 </nav>
 
-    <div class="view intro-2" id="background" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
+    <div class="view intro-2" id="background" parallax=true style="background: url('/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -138,6 +141,13 @@
             <span class="h2" id="subtitle">
               
             </span>
+
+            
+            <br>
+            <span class="h2" id="hitokoto">
+              
+            </span>
+            
 
             
           </div>
@@ -150,14 +160,13 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+    <div class="container nopadding-md">
+      <div class="py-5" id="board" >
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-10 m-auto">
+              
 
 
 
@@ -175,7 +184,7 @@
     <div class="category row">
       <a
         class="category-item  list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckcrm2yxe00034wuk07zd1lca" role="tab" data-toggle="collapse" href="#collapse-ckcrm2yxe00034wuk07zd1lca"
+        id="heading-ckcrrtgx80004ekukdk7l8vej" role="tab" data-toggle="collapse" href="#collapse-ckcrrtgx80004ekukdk7l8vej"
         aria-expanded="true"
       >
         其他
@@ -188,8 +197,8 @@
       <div class="category-collapse">
         
           
-  <div id="collapse-ckcrm2yxe00034wuk07zd1lca" class="collapse in show" role="tabpanel"
-       aria-labelledby="heading-ckcrm2yxe00034wuk07zd1lca">
+  <div id="collapse-ckcrrtgx80004ekukdk7l8vej" class="collapse in show" role="tabpanel"
+       aria-labelledby="heading-ckcrrtgx80004ekukdk7l8vej">
     
   
   
@@ -198,7 +207,7 @@
     <div class="category-sub row">
       <a
         class="category-subitem collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckcrm2yxi00074wuk8o7aaxrz" role="tab" data-toggle="collapse" href="#collapse-ckcrm2yxi00074wuk8o7aaxrz"
+        id="heading-ckcrrtgxc0008ekuke6hd9xhu" role="tab" data-toggle="collapse" href="#collapse-ckcrrtgxc0008ekuke6hd9xhu"
         aria-expanded="false"
       >
         hexo
@@ -211,8 +220,8 @@
       <div class="category-collapse">
         
           
-  <div id="collapse-ckcrm2yxi00074wuk8o7aaxrz" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-ckcrm2yxi00074wuk8o7aaxrz">
+  <div id="collapse-ckcrrtgxc0008ekuke6hd9xhu" class="collapse in" role="tabpanel"
+       aria-labelledby="heading-ckcrrtgxc0008ekuke6hd9xhu">
     
     
     
@@ -234,7 +243,7 @@
     <div class="category-sub row">
       <a
         class="category-subitem collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckcrm2yxi000a4wukg138fovf" role="tab" data-toggle="collapse" href="#collapse-ckcrm2yxi000a4wukg138fovf"
+        id="heading-ckcrrtgxd000bekukceex7afo" role="tab" data-toggle="collapse" href="#collapse-ckcrrtgxd000bekukceex7afo"
         aria-expanded="false"
       >
         Markdown
@@ -247,8 +256,8 @@
       <div class="category-collapse">
         
           
-  <div id="collapse-ckcrm2yxi000a4wukg138fovf" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-ckcrm2yxi000a4wukg138fovf">
+  <div id="collapse-ckcrrtgxd000bekukceex7afo" class="collapse in" role="tabpanel"
+       aria-labelledby="heading-ckcrrtgxd000bekukceex7afo">
     
     
     
@@ -273,22 +282,22 @@
   
 </div>
 
-              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
     
   </main>
 
   
-    <a id="scroll-top-button" href="#" role="button">
-      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-    </a>
+  <a id="scroll-top-button" href="#" role="button">
+    <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+  </a>
   
 
   
-    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+  <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
      aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
@@ -385,22 +394,26 @@
 
   <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
   <script>
-    var typed = new Typed('#subtitle', {
-      strings: [
-        '  ',
-        "分类&nbsp;",
-      ],
-      cursorChar: "_",
-      typeSpeed: 70,
-      loop: false,
-    });
-    typed.stop();
-    $(document).ready(function () {
-      $(".typed-cursor").addClass("h2");
-      typed.start();
-    });
+    function typing(id, title){
+        var typed = new Typed('#' + id, {
+            strings: [
+              '  ',
+              title + "&nbsp;",
+            ],
+            cursorChar: "<span id='xing'>♥</span>",
+            typeSpeed: 70,
+            loop: false,
+        });
+        typed.stop();
+        $(document).ready(function () {
+            $(".typed-cursor").addClass("h2");
+            typed.start();
+        });
+    }
+    
+        typing("subtitle", "分类")
+    
   </script>
-
 
 
 
@@ -487,4 +500,5 @@
 
 
 </body>
+
 </html>
